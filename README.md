@@ -2,7 +2,8 @@
 android使用websocket进行长链接的一个简单的demo，可以用来收发消息或别的操作，里面用到了autobahn的jar包
 
 ##基本操作都在WebSocketService 这个类中
-`webSocketConnection.connect(websocketHost,new WebSocketHandler(){
+```java
+webSocketConnection.connect(websocketHost,new WebSocketHandler(){
 
 
                 //websocket启动时候的回调
@@ -39,4 +40,5 @@ android使用websocket进行长链接的一个简单的demo，可以用来收发
                             break;
                     }
                 }
-            } , options);`
+            } , options);
+```
