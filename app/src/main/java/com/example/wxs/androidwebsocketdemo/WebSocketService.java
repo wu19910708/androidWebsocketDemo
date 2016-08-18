@@ -32,7 +32,7 @@ public class WebSocketService extends Service {
     private static WebSocketConnection webSocketConnection;
     private static WebSocketOptions options = new WebSocketOptions();
     private static boolean isExitApp = false;
-    private static String websocketHost = "ws://120.26.43.176:9503"; //websocket服务端的url,,,ws是协议,和http一样
+    private static String websocketHost = ""; //websocket服务端的url,,,ws是协议,和http一样
 
 
     @Override
