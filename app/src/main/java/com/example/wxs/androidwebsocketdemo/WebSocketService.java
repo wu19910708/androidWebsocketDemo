@@ -141,4 +141,11 @@ public class WebSocketService extends Service {
             }
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (connectionReceiver != null) {
+            unregisterReceiver(connectionReceiver);
+        }
+    }
 }
