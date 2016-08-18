@@ -32,7 +32,7 @@ public class WebSocketService extends Service {
     private static WebSocketConnection webSocketConnection;
     private static WebSocketOptions options = new WebSocketOptions();
     private static boolean isExitApp = false;
-    private static String websocketHost = ""; //websocket服务端的url,,,ws是协议,和http一样
+    private static String websocketHost = ""; //websocket服务端的url,,,ws是协议,和http一样,我写的时候是用的我们公司的服务器所以这里不能贴出来
 
 
     @Override
@@ -112,9 +112,9 @@ public class WebSocketService extends Service {
                         case 2:
                             break;
                         case 3://手动断开连接
-                            if (!isExitApp) {
-                                webSocketConnect();
-                            }
+//                            if (!isExitApp) {
+//                                webSocketConnect();
+//                            }
                             break;
                         case 4:
                             break;
