@@ -42,3 +42,7 @@ webSocketConnection.connect(websocketHost,new WebSocketHandler(){
                 }
             } , options);
 ```
+##发送消息时的注意
+我们公司里是用json进行数据传输的，里面有个cmd字段，是用来区别消息类型，我们传给后台的时候也要用json。具体还是要看手机端和后台商量决定，这里就不写出来了。
+##心跳包
+如果想保持websocket连接的稳定性，建议加上心跳包。可以每隔一段时间就发个简单的字符串给后台，让后台知道你在线，可以用timetask配合CountDownTimer来写
